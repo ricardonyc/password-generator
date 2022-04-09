@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="checkbox--container">
+
+            <input class='readonly' type="text" readonly>
+
+            <p class="error-msg hidden">At least 8 characters are recommended for a strong password</p>
+            <label for="length">Password Length:
+                <input min="8" max="20" class="length" id='length' type="number">
+            </label>
+
+            <label for="uppercase">Include uppercase letters
+                <input class="uppercase" id='uppercase' type="checkbox">
+            </label>
+
+            <label for="lowercase">Include lowercase letters
+                <input class="lowercase" id='lowercase' type="checkbox">
+            </label>
+
+
+            <label for="numbers">Include numbers
+                <input class="numbers" id='numbers' type="checkbox">
+            </label>
+
+
+            <label for="symbols">Include symbols
+                <input class="symbols" id='symbols' type="checkbox">
+            </label>
+
+        </div>
+
+        <div class="buttons--container">
+            <button class='generate'>Generate</button>
+            <button class='copy'>Copy</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
